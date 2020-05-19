@@ -1,0 +1,8 @@
+First Name: Nicholas
+Last Name: Jordan
+Day 1 : 8.5
+Day 2 : 8
+Day 3 : 8
+Day 4 : 8
+Day 5 : 8.7
+Total: 41.2

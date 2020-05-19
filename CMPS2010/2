@@ -1,0 +1,68 @@
+#include <iostream>
+#include <cstring>
+#include <cctype>
+
+using namespace std;
+
+void translate(char human[], char dog[]);
+
+int main()
+{
+    char human[100], dog[100];
+
+    cout << "Enter a string: ";
+    cin.getline(human, 100);
+
+    translate(human, dog);
+
+    return 0;
+}
+
+
+void translate(char human[], char dog[])
+{
+    int i = 0;
+    int w = 0;
+    int f = 0;
+
+    for(i; i <= strlen(human); i++)
+    { 
+        if(isspace(human[i]))
+        {
+            dog[w] = human[i];
+            dog[w - 1] = 'f';
+            dog[w + 1] = 'w';
+        }  
+        if(w == 0)
+        {
+            dog[w] = 'w';
+        }
+        else if(w > 0 && w < strlen(human))
+        {
+            dog[w] = 'o';
+        }
+        else if(w == strlen(human))
+        {
+            dog[w - 1] = 'f';
+            dog[w] = '\0';
+        }
+        else if(ispunct(human[i]))
+        {       
+            dog[w] = human[i];
+        }
+
+        w++;
+    }
+
+    f = 0;
+
+    for(f; f <= strlen(human); f++)
+    {
+        cout << dog[f];
+    }
+
+    cout << endl;
+
+}
+
+

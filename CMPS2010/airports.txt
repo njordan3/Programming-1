@@ -1,0 +1,9 @@
+BFL Bakersfield 3
+LAX Los-Angeles 35
+DFW Dallas 21
+IAH Houston 23
+ONT Ontario 14
+LGA La-Guardia 37
+AGU Aguascalientes 12
+HNL Honolulu 16
+JFK New-York 36
